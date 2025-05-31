@@ -1,7 +1,7 @@
 class SingleDefaultPresetsData:
     def __init__(self):
         self.Default_Video_Extensions = ["MKV"]
-        self.Default_Subtitle_Extensions = ["ASS"."SRT"]
+        self.Default_Subtitle_Extensions = ["ASS","SRT"]
         self.Default_Subtitle_Language = "Russian"
         self.Default_Chapter_Extensions = ["XML"]
         self.Default_Audio_Extensions = ["MKA"]
