@@ -93,19 +93,19 @@ def read_option_file(option_file):
                                                                                     default_value="")
                 temp_default_preset.Default_Subtitle_Extensions = get_data_from_json(json_data=presets[preset_id],
                                                                                      attribute="Default_Subtitle_Extensions",
-                                                                                     default_value=["ASS"])
+                                                                                     default_value=["ASS,SRT"])
                 temp_default_preset.Default_Subtitle_Language = get_data_from_json(json_data=presets[preset_id],
                                                                                    attribute="Default_Subtitle_Language",
-                                                                                   default_value="English")
+                                                                                   default_value="Russian")
                 temp_default_preset.Default_Audio_Directory = get_data_from_json(json_data=presets[preset_id],
                                                                                  attribute="Default_Audio_Directory",
                                                                                  default_value="")
                 temp_default_preset.Default_Audio_Extensions = get_data_from_json(json_data=presets[preset_id],
                                                                                   attribute="Default_Audio_Extensions",
-                                                                                  default_value=["AAC"])
+                                                                                  default_value=["MKA"])
                 temp_default_preset.Default_Audio_Language = get_data_from_json(json_data=presets[preset_id],
                                                                                 attribute="Default_Audio_Language",
-                                                                                default_value="English")
+                                                                                default_value="Russian")
                 temp_default_preset.Default_Chapter_Directory = get_data_from_json(json_data=presets[preset_id],
                                                                                    attribute="Default_Chapter_Directory",
                                                                                    default_value="")
@@ -121,12 +121,10 @@ def read_option_file(option_file):
                 temp_default_preset.Default_Favorite_Subtitle_Languages = get_data_from_json(
                     json_data=presets[preset_id],
                     attribute="Default_Favorite_Subtitle_Languages",
-                    default_value=['English',
-                                   'Arabic'])
+                    default_value=['Russian'])
                 temp_default_preset.Default_Favorite_Audio_Languages = get_data_from_json(json_data=presets[preset_id],
                                                                                           attribute="Default_Favorite_Audio_Languages",
-                                                                                          default_value=['English',
-                                                                                                         'Arabic'])
+                                                                                          default_value=['Russian'])
                 Options.DefaultPresets.append(temp_default_preset)
             Options.FavoritePresetId = get_data_from_json(json_data=data, attribute="FavoritePresetId", default_value=0)
             Options.Dark_Mode = get_data_from_json(json_data=data, attribute="Dark_Mode", default_value=False)
